@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9B675BD5-5004-4770-B9BC-79BB0E7A5736}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TangailBarAssociationV2</RootNamespace>
+    <AssemblyName>TangailBarAssociationV2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=15.1.4.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\ZISAN\Documents\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\TagailBarAssociation.mdb" />
+    <Content Include="cssForGallery\images\blank.gif" />
+    <Content Include="cssForGallery\images\closelabel.gif" />
+    <Content Include="cssForGallery\images\loading.gif" />
+    <Content Include="cssForGallery\images\nextlabel.gif" />
+    <Content Include="cssForGallery\images\prevlabel.gif" />
+    <Content Include="cssForGallery\lightbox.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\components.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\responsee.css" />
+    <Content Include="css\style.css" />
+    <Content Include="home.aspx" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
+    <Content Include="img1\330x190-2.jpg" />
+    <Content Include="img1\330x190-3.jpg" />
+    <Content Include="img1\330x190.jpg" />
+    <Content Include="img1\940x380-2.jpg" />
+    <Content Include="img1\940x380-3.jpg" />
+    <Content Include="img1\940x380.jpg" />
+    <Content Include="img1\logo.png" />
+    <Content Include="img\330x190-2.jpg" />
+    <Content Include="img\330x190-3.jpg" />
+    <Content Include="img\330x190.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="jsForGallery\effects.js" />
+    <Content Include="jsForGallery\jquery.min_.js" />
+    <Content Include="jsForGallery\lightbox.js" />
+    <Content Include="jsForGallery\prototype.js" />
+    <Content Include="jsForGallery\scriptaculous.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\jquery-1.11.3.min.js" />
+    <Content Include="js\jquery-1.12.1.min.js" />
+    <Content Include="js\jquery-1.8.3.min.js" />
+    <Content Include="js\jquery-ui.min.js" />
+    <Content Include="js\jquery.counterup.min.js" />
+    <Content Include="js\modernizr.js" />
+    <Content Include="js\responsee.js" />
+    <Content Include="leftImages\android.jpg" />
+    <Content Include="leftImages\C.jpg" />
+    <Content Include="leftImages\java.jpg" />
+    <Content Include="leftImages\Oracle.jpg" />
+    <Content Include="leftImages\php.jpg" />
+    <Content Include="leftImages\sql.jpg" />
+    <Content Include="LibraryBookInformation.aspx" />
+    <Content Include="masterPage1.aspx" />
+    <Content Include="membersImages\429.PNG" />
+    <Content Include="membersImages\43.JPG" />
+    <Content Include="membersImages\430.PNG" />
+    <Content Include="membersImages\431.PNG" />
+    <Content Include="membersImages\432.PNG" />
+    <Content Include="membersImages\433.PNG" />
+    <Content Include="membersImages\434.PNG" />
+    <Content Include="membersImages\435.PNG" />
+    <Content Include="membersImages\436.PNG" />
+    <Content Include="membersImages\437.PNG" />
+    <Content Include="membersImages\438.PNG" />
+    <Content Include="membersImages\439.PNG" />
+    <Content Include="membersImages\44.JPG" />
+    <Content Include="membersImages\440.PNG" />
+    <Content Include="membersImages\441.PNG" />
+    <Content Include="membersImages\442.PNG" />
+    <Content Include="membersImages\443.PNG" />
+    <Content Include="membersImages\444.PNG" />
+    <Content Include="membersImages\445.PNG" />
+    <Content Include="membersImages\446.PNG" />
+    <Content Include="membersImages\447.PNG" />
+    <Content Include="membersImages\448.PNG" />
+    <Content Include="membersImages\449.PNG" />
+    <Content Include="membersImages\45.JPG" />
+    <Content Include="membersImages\450.PNG" />
+    <Content Include="membersImages\451.PNG" />
+    <Content Include="membersImages\452.PNG" />
+    <Content Include="membersImages\453.PNG" />
+    <Content Include="membersImages\454.PNG" />
+    <Content Include="membersImages\455.PNG" />
+    <Content Include="membersImages\456.PNG" />
+    <Content Include="membersImages\457.PNG" />
+    <Content Include="membersImages\458.PNG" />
+    <Content Include="membersImages\459.PNG" />
+    <Content Include="membersImages\46.JPG" />
+    <Content Include="membersImages\460.PNG" />
+    <Content Include="membersImages\461.PNG" />
+    <Content Include="membersImages\462.PNG" />
+    <Content Include="membersImages\463.PNG" />
+    <Content Include="membersImages\464.PNG" />
+    <Content Include="membersImages\465.PNG" />
+    <Content Include="membersImages\466.PNG" />
+    <Content Include="membersImages\467.PNG" />
+    <Content Include="membersImages\468.PNG" />
+    <Content Include="membersImages\469.PNG" />
+    <Content Include="membersImages\47.JPG" />
+    <Content Include="membersImages\470.PNG" />
+    <Content Include="membersImages\471.PNG" />
+    <Content Include="membersImages\472.PNG" />
+    <Content Include="membersImages\473.PNG" />
+    <Content Include="membersImages\474.PNG" />
+    <Content Include="membersImages\475.PNG" />
+    <Content Include="membersImages\476.PNG" />
+    <Content Include="membersImages\477.PNG" />
+    <Content Include="membersImages\478.PNG" />
+    <Content Include="membersImages\479.PNG" />
+    <Content Include="membersImages\48.JPG" />
+    <Content Include="membersImages\480.PNG" />
+    <Content Include="membersImages\481.PNG" />
+    <Content Include="membersImages\482.PNG" />
+    <Content Include="membersImages\483.PNG" />
+    <Content Include="membersImages\484.PNG" />
+    <Content Include="membersImages\485.PNG" />
+    <Content Include="membersImages\486.PNG" />
+    <Content Include="membersImages\487.PNG" />
+    <Content Include="membersImages\488.PNG" />
+    <Content Include="membersImages\489.PNG" />
+    <Content Include="membersImages\49.JPG" />
+    <Content Include="membersImages\490.PNG" />
+    <Content Include="membersImages\491.PNG" />
+    <Content Include="membersImages\492.PNG" />
+    <Content Include="membersImages\493.PNG" />
+    <Content Include="membersImages\494.PNG" />
+    <Content Include="membersImages\495.PNG" />
+    <Content Include="membersImages\496.PNG" />
+    <Content Include="membersImages\497.PNG" />
+    <Content Include="membersImages\498.PNG" />
+    <Content Include="membersImages\499.PNG" />
+    <Content Include="membersImages\5.JPG" />
+    <Content Include="membersImages\50.JPG" />
+    <Content Include="membersImages\500.PNG" />
+    <Content Include="membersImages\501.PNG" />
+    <Content Include="membersImages\502.PNG" />
+    <Content Include="membersImages\503.PNG" />
+    <Content Include="membersImages\504.PNG" />
+    <Content Include="membersImages\505.PNG" />
+    <Content Include="membersImages\506.PNG" />
+    <Content Include="membersImages\507.PNG" />
+    <Content Include="membersImages\508.PNG" />
+    <Content Include="membersImages\509.PNG" />
+    <Content Include="membersImages\51.JPG" />
+    <Content Include="membersImages\510.PNG" />
+    <Content Include="membersImages\511.PNG" />
+    <Content Include="membersImages\512.PNG" />
+    <Content Include="membersImages\513.PNG" />
+    <Content Include="membersImages\514.PNG" />
+    <Content Include="membersImages\515.PNG" />
+    <Content Include="membersImages\516.PNG" />
+    <Content Include="membersImages\517.PNG" />
+    <Content Include="membersImages\518.PNG" />
+    <Content Include="membersImages\519.PNG" />
+    <Content Include="membersImages\52.JPG" />
+    <Content Include="membersImages\520.PNG" />
+    <Content Include="membersImages\521.PNG" />
+    <Content Include="membersImages\522.PNG" />
+    <Content Include="membersImages\523.PNG" />
+    <Content Include="membersImages\524.PNG" />
+    <Content Include="membersImages\525.PNG" />
+    <Content Include="membersImages\526.PNG" />
+    <Content Include="membersImages\527.PNG" />
+    <Content Include="membersImages\528.PNG" />
+    <Content Include="membersImages\529.PNG" />
+    <Content Include="membersImages\53.JPG" />
+    <Content Include="membersImages\530.PNG" />
+    <Content Include="membersImages\531.PNG" />
+    <Content Include="membersImages\532.PNG" />
+    <Content Include="membersImages\533.PNG" />
+    <Content Include="membersImages\534.PNG" />
+    <Content Include="membersImages\535.PNG" />
+    <Content Include="membersImages\536.PNG" />
+    <Content Include="membersImages\537.PNG" />
+    <Content Include="membersImages\538.PNG" />
+    <Content Include="membersImages\539.PNG" />
+    <Content Include="membersImages\54.JPG" />
+    <Content Include="membersImages\540.PNG" />
+    <Content Include="membersImages\541.PNG" />
+    <Content Include="membersImages\542.PNG" />
+    <Content Include="membersImages\543.PNG" />
+    <Content Include="membersImages\544.PNG" />
+    <Content Include="membersImages\545.PNG" />
+    <Content Include="membersImages\546.PNG" />
+    <Content Include="membersImages\547.PNG" />
+    <Content Include="membersImages\548.PNG" />
+    <Content Include="membersImages\549.PNG" />
+    <Content Include="membersImages\55.JPG" />
+    <Content Include="membersImages\550.PNG" />
+    <Content Include="membersImages\551.PNG" />
+    <Content Include="membersImages\552.PNG" />
+    <Content Include="membersImages\553.PNG" />
+    <Content Include="membersImages\554.PNG" />
+    <Content Include="membersImages\555.PNG" />
+    <Content Include="membersImages\556.PNG" />
+    <Content Include="membersImages\557.PNG" />
+    <Content Include="membersImages\558.PNG" />
+    <Content Include="membersImages\559.PNG" />
+    <Content Include="membersImages\56.JPG" />
+    <Content Include="membersImages\560.PNG" />
+    <Content Include="membersImages\561.PNG" />
+    <Content Include="membersImages\562.PNG" />
+    <Content Include="membersImages\563.PNG" />
+    <Content Include="membersImages\564.PNG" />
+    <Content Include="membersImages\565.PNG" />
+    <Content Include="membersImages\566.PNG" />
+    <Content Include="membersImages\567.PNG" />
+    <Content Include="membersImages\568.PNG" />
+    <Content Include="membersImages\569.PNG" />
+    <Content Include="membersImages\57.JPG" />
+    <Content Include="membersImages\570.PNG" />
+    <Content Include="membersImages\571.PNG" />
+    <Content Include="membersImages\572.PNG" />
+    <Content Include="membersImages\573.PNG" />
+    <Content Include="membersImages\574.PNG" />
+    <Content Include="membersImages\575.PNG" />
+    <Content Include="membersImages\576.PNG" />
+    <Content Include="membersImages\577.PNG" />
+    <Content Include="membersImages\578.PNG" />
+    <Content Include="membersImages\579.PNG" />
+    <Content Include="membersImages\58.JPG" />
+    <Content Include="membersImages\580.PNG" />
+    <Content Include="membersImages\581.PNG" />
+    <Content Include="membersImages\582.PNG" />
+    <Content Include="membersImages\583.PNG" />
+    <Content Include="membersImages\584.PNG" />
+    <Content Include="membersImages\585.PNG" />
+    <Content Include="membersImages\586.PNG" />
+    <Content Include="membersImages\587.PNG" />
+    <Content Include="membersImages\588.PNG" />
+    <Content Include="membersImages\589.PNG" />
+    <Content Include="membersImages\59.JPG" />
+    <Content Include="membersImages\590.PNG" />
+    <Content Include="membersImages\591.PNG" />
+    <Content Include="membersImages\592.PNG" />
+    <Content Include="membersImages\593.PNG" />
+    <Content Include="membersImages\594.PNG" />
+    <Content Include="membersImages\595.PNG" />
+    <Content Include="membersImages\596.PNG" />
+    <Content Include="membersImages\597.PNG" />
+    <Content Include="membersImages\598.PNG" />
+    <Content Include="membersImages\599.PNG" />
+    <Content Include="membersImages\6.JPG" />
+    <Content Include="membersImages\60.JPG" />
+    <Content Include="membersImages\600.PNG" />
+    <Content Include="membersImages\601.PNG" />
+    <Content Include="membersImages\602.PNG" />
+    <Content Include="membersImages\603.PNG" />
+    <Content Include="membersImages\604.PNG" />
+    <Content Include="membersImages\605.PNG" />
+    <Content Include="membersImages\606.PNG" />
+    <Content Include="membersImages\607.PNG" />
+    <Content Include="membersImages\608.PNG" />
+    <Content Include="membersImages\609.PNG" />
+    <Content Include="membersImages\61.JPG" />
+    <Content Include="membersImages\610.PNG" />
+    <Content Include="membersImages\611.PNG" />
+    <Content Include="membersImages\612.PNG" />
+    <Content Include="membersImages\613.PNG" />
+    <Content Include="membersImages\614.PNG" />
+    <Content Include="membersImages\615.PNG" />
+    <Content Include="membersImages\616.PNG" />
+    <Content Include="membersImages\617.PNG" />
+    <Content Include="membersImages\618.PNG" />
+    <Content Include="membersImages\619.PNG" />
+    <Content Include="membersImages\62.JPG" />
+    <Content Include="membersImages\620.PNG" />
+    <Content Include="membersImages\621.PNG" />
+    <Content Include="membersImages\622.PNG" />
+    <Content Include="membersImages\623.PNG" />
+    <Content Include="membersImages\624.PNG" />
+    <Content Include="membersImages\625.PNG" />
+    <Content Include="membersImages\626.PNG" />
+    <Content Include="membersImages\627.PNG" />
+    <Content Include="membersImages\628.PNG" />
+    <Content Include="membersImages\629.PNG" />
+    <Content Include="membersImages\63.JPG" />
+    <Content Include="membersImages\630.PNG" />
+    <Content Include="membersImages\631.PNG" />
+    <Content Include="membersImages\632.PNG" />
+    <Content Include="membersImages\633.PNG" />
+    <Content Include="membersImages\634.PNG" />
+    <Content Include="membersImages\635.PNG" />
+    <Content Include="membersImages\636.PNG" />
+    <Content Include="membersImages\637.PNG" />
+    <Content Include="membersImages\638.PNG" />
+    <Content Include="membersImages\639.PNG" />
+    <Content Include="membersImages\64.JPG" />
+    <Content Include="membersImages\640.PNG" />
+    <Content Include="membersImages\641.PNG" />
+    <Content Include="membersImages\642.PNG" />
+    <Content Include="membersImages\643.PNG" />
+    <Content Include="membersImages\644.PNG" />
+    <Content Include="membersImages\645.PNG" />
+    <Content Include="membersImages\646.PNG" />
+    <Content Include="membersImages\647.PNG" />
+    <Content Include="membersImages\648.PNG" />
+    <Content Include="membersImages\649.PNG" />
+    <Content Include="membersImages\65.JPG" />
+    <Content Include="membersImages\650.PNG" />
+    <Content Include="membersImages\651.PNG" />
+    <Content Include="membersImages\652.PNG" />
+    <Content Include="membersImages\653.PNG" />
+    <Content Include="membersImages\654.PNG" />
+    <Content Include="membersImages\655.PNG" />
+    <Content Include="membersImages\656.PNG" />
+    <Content Include="membersImages\657.PNG" />
+    <Content Include="membersImages\658.PNG" />
+    <Content Include="membersImages\659.PNG" />
+    <Content Include="membersImages\66.JPG" />
+    <Content Include="membersImages\660.PNG" />
+    <Content Include="membersImages\661.PNG" />
+    <Content Include="membersImages\662.PNG" />
+    <Content Include="membersImages\663.PNG" />
+    <Content Include="membersImages\664.PNG" />
+    <Content Include="membersImages\665.PNG" />
+    <Content Include="membersImages\666.PNG" />
+    <Content Include="membersImages\667.PNG" />
+    <Content Include="membersImages\668.PNG" />
+    <Content Include="membersImages\669.PNG" />
+    <Content Include="membersImages\67.JPG" />
+    <Content Include="membersImages\670.PNG" />
+    <Content Include="membersImages\671.PNG" />
+    <Content Include="membersImages\672.PNG" />
+    <Content Include="membersImages\673.PNG" />
+    <Content Include="membersImages\674.PNG" />
+    <Content Include="membersImages\675.PNG" />
+    <Content Include="membersImages\676.PNG" />
+    <Content Include="membersImages\677.PNG" />
+    <Content Include="membersImages\678.PNG" />
+    <Content Include="membersImages\679.PNG" />
+    <Content Include="membersImages\68.JPG" />
+    <Content Include="membersImages\680.PNG" />
+    <Content Include="membersImages\681.PNG" />
+    <Content Include="membersImages\682.PNG" />
+    <Content Include="membersImages\683.PNG" />
+    <Content Include="membersImages\684.PNG" />
+    <Content Include="membersImages\685.PNG" />
+    <Content Include="membersImages\686.PNG" />
+    <Content Include="membersImages\687.PNG" />
+    <Content Include="membersImages\688.PNG" />
+    <Content Include="membersImages\689.PNG" />
+    <Content Include="membersImages\69.JPG" />
+    <Content Include="membersImages\690.PNG" />
+    <Content Include="membersImages\691.PNG" />
+    <Content Include="membersImages\692.PNG" />
+    <Content Include="membersImages\693.PNG" />
+    <Content Include="membersImages\694.PNG" />
+    <Content Include="membersImages\695.PNG" />
+    <Content Include="membersImages\696.PNG" />
+    <Content Include="membersImages\697.PNG" />
+    <Content Include="membersImages\698.PNG" />
+    <Content Include="membersImages\699.PNG" />
+    <Content Include="membersImages\7.JPG" />
+    <Content Include="membersImages\70.JPG" />
+    <Content Include="membersImages\700.PNG" />
+    <Content Include="membersImages\701.PNG" />
+    <Content Include="membersImages\702.PNG" />
+    <Content Include="membersImages\703.PNG" />
+    <Content Include="membersImages\704.PNG" />
+    <Content Include="membersImages\705.PNG" />
+    <Content Include="membersImages\706.PNG" />
+    <Content Include="membersImages\707.PNG" />
+    <Content Include="membersImages\708.PNG" />
+    <Content Include="membersImages\71.JPG" />
+    <Content Include="membersImages\72.JPG" />
+    <Content Include="membersImages\73.JPG" />
+    <Content Include="membersImages\74.JPG" />
+    <Content Include="membersImages\75.JPG" />
+    <Content Include="membersImages\76.JPG" />
+    <Content Include="membersImages\78.JPG" />
+    <Content Include="membersImages\79.JPG" />
+    <Content Include="membersImages\8.JPG" />
+    <Content Include="membersImages\81.JPG" />
+    <Content Include="membersImages\82.JPG" />
+    <Content Include="membersImages\83.JPG" />
+    <Content Include="membersImages\84.JPG" />
+    <Content Include="membersImages\85.JPG" />
+    <Content Include="membersImages\86.JPG" />
+    <Content Include="membersImages\87.JPG" />
+    <Content Include="membersImages\88.JPG" />
+    <Content Include="membersImages\89.JPG" />
+    <Content Include="membersImages\9.JPG" />
+    <Content Include="membersImages\90.JPG" />
+    <Content Include="membersImages\91.JPG" />
+    <Content Include="membersImages\92.JPG" />
+    <Content Include="membersImages\93.JPG" />
+    <Content Include="membersImages\94.JPG" />
+    <Content Include="membersImages\95.JPG" />
+    <Content Include="membersImages\96.JPG" />
+    <Content Include="membersImages\98.JPG" />
+    <Content Include="membersImages\99.JPG" />
+    <Content Include="membersImages\Chrysanthemum.jpg" />
+    <Content Include="membersImages\Desert.jpg" />
+    <Content Include="membersImages\dropboxChat.JPG" />
+    <Content Include="membersImages\emergencyBD.JPG" />
+    <Content Include="membersImages\Hydrangeas.jpg" />
+    <Content Include="membersImages\Jellyfish.jpg" />
+    <Content Include="membersImages\Koala.jpg" />
+    <Content Include="membersImages\Lighthouse.jpg" />
+    <Content Include="membersImages\Penguins.jpg" />
+    <Content Include="membersImages\Tulips.jpg" />
+    <Content Include="membersImages\Untitled.jpg" />
+    <Content Include="owl-carousel\AjaxLoader.gif" />
+    <Content Include="owl-carousel\grabbing.png" />
+    <Content Include="owl-carousel\owl.carousel.css" />
+    <Content Include="owl-carousel\owl.carousel.js" />
+    <Content Include="owl-carousel\owl.carousel.min.js" />
+    <Content Include="owl-carousel\owl.theme.css" />
+    <Content Include="practice.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+    <Content Include="Members.aspx" />
+    <Content Include="addMembers.aspx" />
+    <Content Include="ShowMemberInformation.aspx" />
+    <Content Include="MemberFullInformation.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="addMarque.aspx" />
+    <Content Include="addNews.aspx" />
+    <Content Include="Registration.aspx" />
+    <Content Include="Gallery.aspx" />
+    <Content Include="UnderConstruction.aspx" />
+    <Content Include="LibraryManagement.aspx" />
+    <Content Include="InsertBookInformation.aspx" />
+    <Content Include="AddBookCategory.aspx" />
+    <Content Include="WebForm16.aspx" />
+    <Content Include="GalleryImageEditUpdate.aspx" />
+    <Content Include="WelcomeAdmin.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BookCategoryInsertUpdateDelete.cs" />
+    <Compile Include="BookEntryInsertUpdateDelete.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="DonarListInsertUpdateDelete.cs" />
+    <Compile Include="GalleryImageEditUpdateDeleteClass.cs" />
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryBookInformation.aspx.cs">
+      <DependentUpon>LibraryBookInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LibraryBookInformation.aspx.designer.cs">
+      <DependentUpon>LibraryBookInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="masterPage1.aspx.cs">
+      <DependentUpon>masterPage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masterPage1.aspx.designer.cs">
+      <DependentUpon>masterPage1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage1.Master.cs">
+      <DependentUpon>MasterPage1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage1.Master.designer.cs">
+      <DependentUpon>MasterPage1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage2.Master.cs">
+      <DependentUpon>MasterPage2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage2.Master.designer.cs">
+      <DependentUpon>MasterPage2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="practice.aspx.cs">
+      <DependentUpon>practice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="practice.aspx.designer.cs">
+      <DependentUpon>practice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowEditDeleteOfMembersInformation.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Members.aspx.cs">
+      <DependentUpon>Members.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Members.aspx.designer.cs">
+      <DependentUpon>Members.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addMembers.aspx.cs">
+      <DependentUpon>addMembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addMembers.aspx.designer.cs">
+      <DependentUpon>addMembers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowMemberInformation.aspx.cs">
+      <DependentUpon>ShowMemberInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowMemberInformation.aspx.designer.cs">
+      <DependentUpon>ShowMemberInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberFullInformation.aspx.cs">
+      <DependentUpon>MemberFullInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberFullInformation.aspx.designer.cs">
+      <DependentUpon>MemberFullInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addMarque.aspx.cs">
+      <DependentUpon>addMarque.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addMarque.aspx.designer.cs">
+      <DependentUpon>addMarque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addNews.aspx.cs">
+      <DependentUpon>addNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addNews.aspx.designer.cs">
+      <DependentUpon>addNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnderConstruction.aspx.cs">
+      <DependentUpon>UnderConstruction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnderConstruction.aspx.designer.cs">
+      <DependentUpon>UnderConstruction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryManagement.aspx.cs">
+      <DependentUpon>LibraryManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LibraryManagement.aspx.designer.cs">
+      <DependentUpon>LibraryManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InsertBookInformation.aspx.cs">
+      <DependentUpon>InsertBookInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InsertBookInformation.aspx.designer.cs">
+      <DependentUpon>InsertBookInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddBookCategory.aspx.cs">
+      <DependentUpon>AddBookCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddBookCategory.aspx.designer.cs">
+      <DependentUpon>AddBookCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm16.aspx.cs">
+      <DependentUpon>WebForm16.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm16.aspx.designer.cs">
+      <DependentUpon>WebForm16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GalleryImageEditUpdate.aspx.cs">
+      <DependentUpon>GalleryImageEditUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GalleryImageEditUpdate.aspx.designer.cs">
+      <DependentUpon>GalleryImageEditUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeAdmin.aspx.cs">
+      <DependentUpon>WelcomeAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WelcomeAdmin.aspx.designer.cs">
+      <DependentUpon>WelcomeAdmin.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="font\glyphicons-halflings-regular.eot" />
+    <Content Include="font\glyphicons-halflings-regular.svg" />
+    <Content Include="font\glyphicons-halflings-regular.ttf" />
+    <Content Include="font\glyphicons-halflings-regular.woff" />
+    <Content Include="font\glyphicons-halflings-regular.woff2" />
+    <Content Include="font\mfglabsiconset-webfont.eot" />
+    <Content Include="font\mfglabsiconset-webfont.svg" />
+    <Content Include="font\mfglabsiconset-webfont.ttf" />
+    <Content Include="font\mfglabsiconset-webfont.woff" />
+    <Content Include="MasterPage1.Master" />
+    <Content Include="MasterPage2.Master" />
+    <Content Include="Constitution\THE-CONSTITUTION.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BookImages\" />
+    <Folder Include="Gallery\" />
+    <Folder Include="RecentNews\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:35203/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

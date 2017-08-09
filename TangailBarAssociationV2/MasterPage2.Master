@@ -1,0 +1,345 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage2.master.cs" Inherits="TangailBarAssociationV2.MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <title>TANGAIL BAR ASSOCIATION</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- <link href="css/bootstrap.css" rel="stylesheet" /> -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/responsee.js"></script>
+
+    <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <!--[if lt IE 9]>
+	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+      <![endif]-->
+</head>
+<body>
+    <form id="form1" runat="server">
+        <body class="size-1140">
+        <!-- HEADER -->
+        <header>
+            <div class="line">
+                <div class="box">
+                    <div class="s-6 l-2">
+                        <img src="img/banner.jpg">
+                    </div>
+                    <%--<div class="s-12 l-8 right">
+                        <div class="margin">
+                            <form class="customform s-12 l-8" action="http://google.com/">
+                                <div class="s-9">
+                                    <input type="text" placeholder="Search form" title="Search form" />
+                                </div>
+                                <div class="s-3">
+                                    <button type="submit">Search</button>
+                                </div>
+                            </form>
+                            <div class="s-12 l-4">
+                                <p class="right">3 items / €199</p>
+                            </div>
+                        </div>
+                    </div>--%>
+                </div>
+            </div>
+            <!-- TOP NAV -->
+            <div class="line">
+                <nav>
+                    <p class="nav-text">Custom menu text</p>
+                    <div class="top-nav s-12 l-10">
+                        <ul>
+                            <li><a href="home.aspx">Home</a></li>
+                            <li>
+                                <a>About us</a>
+                                <ul>
+                                    <li><a>History</a></li>
+                                    <li><a>Constitution</a></li>
+                                    <li><a>Activities</a></li>
+                                    <li><a>Eminent Lawyer</a></li>
+                                    <li>
+                                        <a>Message</a>
+                                        <ul>
+                                            <li><a>DBA President</a></li>
+                                            <li><a>DBA Secretary</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a>Committee</a>
+                                <%--<ul>
+                                    <li><a>Present Executive Committee</a></li>
+                                    <li>
+                                        <a>Formal Executive Committee</a>
+                                        <ul>
+                                            <li><a>2015-16</a></li>
+                                            <li><a>2014-15</a></li>
+                                            <li><a>2013-14</a></li>
+                                            <li><a>2012-13</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>--%>
+                            </li>
+
+                            <li>
+                                <a>Membership</a>
+                                <ul>
+                                    <li><a href="Members.aspx">Member of TBA</a></li>
+                                    <li><a>Membership form</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a>Library</a>
+                                <ul>
+                                    <li><a href="LibraryBookInformation.aspx">Books Information</a></li>
+                                    <li><a>Doner Information</a></li>
+                                </ul>
+                            </li>
+
+                            <%--<li><a>News & Event</a></li>--%>
+
+                            <li><a href="Gallery.aspx">Gallery</a></li>
+
+                            <li><a>Contact</a></li>
+
+                            <li><a href="Login.aspx">Login</a></li>
+                            <li><a href="http://webmail.tangailbarassociation.com/login.php">Webmail</a></li>
+
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+
+        <!-- ASIDE NAV AND CONTENT -->
+
+        <div class="line">
+            <div class="box">
+                <div class="margin">
+                    <!-- CONTENT -->
+                    <section class="s-12 m-8 l-9 right">
+                        <%--<h1>Content</h1>--%>
+                        <div class="NoticeboardHeader text-center">
+                             <h3>
+                                 <asp:Label ID="Label1" runat="server" Text="PANEL"></asp:Label>
+                                 </h3>
+                         </div>
+                        <div class="margin">
+                            <div id="Div1" class="contentPlaceHolder" runat="server">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+							</div>
+                        </div>
+                    </section>
+                    <!-- ASIDE NAV -->
+
+
+                    <section id="asideImages">
+                        <div class="row">
+
+                            <div class="list-group">
+                                <a class="list-group-item active"><h4 class="list-group-item-heading">Admin Panel</h4></a>
+                                <a href="addMarque.aspx" class="list-group-item"><h4 class="list-group-item-heading">Add marquee</h4></a>
+                                <a href="addNews.aspx" class="list-group-item"><h4 class="list-group-item-heading">Recent news</h4></a>
+                                <a href="addMembers.aspx" class="list-group-item"><h4 class="list-group-item-heading">Add members</h4></a>
+                                <a href="ShowMemberInformation.aspx" class="list-group-item"><h4 class="list-group-item-heading">View members</h4></a>
+                                <a href="Registration.aspx" class="list-group-item"><h4 class="list-group-item-heading">Admin registration</h4></a>
+                                <a href="AddBookCategory.aspx" class="list-group-item"><h4 class="list-group-item-heading">Add Book Category</h4></a>
+                                <a href="InsertBookInformation.aspx" class="list-group-item"><h4 class="list-group-item-heading">Store Book Information</h4></a>
+                                <a href="LibraryManagement.aspx" class="list-group-item"><h4 class="list-group-item-heading">Library Management</h4></a>
+                                <a href="GalleryImageEditUpdate.aspx" class="list-group-item"><h4 class="list-group-item-heading">Image gallery</h4></a>
+                            </div>
+
+                        </div>
+                    </section>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- GALLERY CAROUSEL -->
+        <div class="line">
+            <h2>Gallery</h2>
+            <div id="owl-demo2" class="owl-carousel margin-bottom">
+                <div class="item">
+                    <img class="lazyOwl" data-src="img1/1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img1/2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img1/3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img1/1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img1/2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img1/3.jpg" alt="">
+                </div>
+                <%--<div class="item">
+                    <img class="lazyOwl" data-src="img/330x190.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190-2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190-3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190-2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190-3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190-2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190-3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190.jpg" alt="">
+                </div>--%>
+            </div>
+            <%--<div id="owl-demo2" class="owl-carousel margin-bottom">
+                <div class="item">
+                    <img class="lazyOwl" data-src="img1/330x190.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img1/330x190-2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img1/330x190-3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190-2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190-3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190-2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190-3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190-2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190-3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190-2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190-3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="lazyOwl" data-src="img/330x190.jpg" alt="">
+                </div>
+            </div>--%>
+        </div>
+
+        <!-- FOOTER -->
+        <section id="footer" class="text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10">
+						<div class="footer-text text-right">
+							<p>Copyright &copy; 2016 Tangail Bar Assocation. All Rights Reserved. Powered by <a href="http://www.trycatchtechnologybd.com">Try Catch Technology Ltd.</a></p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+        <%--<footer class="line">
+            <div class="footerColorSection">
+            <div class="s-12 l-6">
+                <p>Copyright 2015, Vision Design - graphic zoo</p>
+            </div>
+            <div class="s-12 l-6">
+                <a class="right" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding by Responsee Team</a>
+            </div>
+                </div>
+        </footer>--%>
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+        <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                $("#owl-demo").owlCarousel({
+                    navigation: true,
+                    slideSpeed: 300,
+                    paginationSpeed: 400,
+                    autoPlay: true,
+                    singleItem: true
+                });
+                $("#owl-demo2").owlCarousel({
+                    items: 4,
+                    lazyLoad: true,
+                    autoPlay: true,
+                    navigation: true,
+                    pagination: false
+                });
+            });
+
+
+
+        </script>
+        <script>
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        </script>
+
+
+
+    </body>
+    </form>
+</body>
+</html>

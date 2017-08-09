@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.OleDb;
+
+namespace TangailBarAssociationV2
+{
+    public partial class WebForm5 : System.Web.UI.Page
+    {
+        OleDbConnection connection = new OleDbConnection();
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            connection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|TagailBarAssociation.mdb;";
+            try
+            {
+                connection.Open();
+                string qry = "select memberImage,memberID,memberName,memberFatherName,memberDateOfBirth,memberDistrict,memberPresentAddress,memberPhoneNumber,memberStatus,memberNominee,memberDateOfMembership,memberDateOfEnrolment from MemeberInformation where memberID='" + Class1.memberID + "'";
+                OleDbDataAdapter da = new OleDbDataAdapter(qry, connection);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                DataList1.DataSource = ds.Tables[0].DefaultView;
+                DataList1.DataBind();
+            }
+            catch
+            { }
+            finally
+            {
+                connection.Close();
+            }
+        }
+    }
+}
